@@ -7,65 +7,92 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main>
-      <div> 
-        <img class="img" src="./assets/images/logo5.png">
+      <div>
+        <img class="img" src="./assets/images/logo5.png" />
       </div>
       <div class="login">
         <h1>Cadastro</h1>
         <form>
           <div>
             <label for="name">Nome</label><br />
-            <input type='text' id="name" name="name" placeholder="" class="large_input"/><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder=""
+              class="large_input"
+            /><br />
           </div>
           <div>
             <label for="email">E-mail</label><br />
-            <input type="email" id="email" name="email" placeholder="" class="large_input"/><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder=""
+              class="large_input"
+            /><br />
           </div>
-          <div class="password" style="height: 67px;">
-              <div>
-                <label for="pwd">Senha</label> <br />
-                <input type="password" id="pwd" name="pwd" class="small_input"/> <br /><br />
-              </div>
-              <div>
-                <label for="pwd">Confirmar Senha</label> <br />
-                <input type="password" id="pwd" name="pwd" class="small_input"/> <br /><br />
-              </div>
-          </div>
-          <div class="city_state" style="height: 67px;">
+          <div class="password" style="height: 67px">
             <div>
-                <label for="state">Estado</label> <br />
-                <input type="select" id="state" name="state" class="vsmall_input"/> <br /><br />
-              </div>
-              <div>
-                <label for="city">Cidade</label> <br />
-                <input type="text" id="city" name="city" class="medium_input"/> <br /><br />
-              </div>
+              <label for="pwd">Senha</label> <br />
+              <input type="password" id="pwd" name="pwd" class="small_input" />
+              <br /><br />
+            </div>
+            <div>
+              <label for="pwd">Confirmar Senha</label> <br />
+              <input type="password" id="pwd" name="pwd" class="small_input" />
+              <br /><br />
+            </div>
+          </div>
+          <div class="city_state" style="height: 67px">
+            <div>
+              <label for="state">Estado</label> <br />
+              <input
+                type="select"
+                id="state"
+                name="state"
+                class="vsmall_input"
+              />
+              <br /><br />
+            </div>
+            <div>
+              <label for="city">Cidade</label> <br />
+              <input type="text" id="city" name="city" class="medium_input" />
+              <br /><br />
+            </div>
           </div>
           <div>
-                <label for="adreess">Logradouro</label> <br />
-                <input type="text" id="adreess" name="adreess" class="large_input"/> <br /><br />
+            <label for="adreess">Logradouro</label> <br />
+            <input
+              type="text"
+              id="adreess"
+              name="adreess"
+              class="large_input"
+            />
+            <br /><br />
           </div>
           <div class="login_conta">
             <div style="display: flex; justify-content: center">
-                Já possui uma conta?
-                <a class='a' href="./login.html">Login</a>
-              </div>
-              <div>
-                <input
-                  type="submit"
-                  value="Criar conta"
-                  id="botao"
-                  style="width: 158px; margin-top: 0;"
-                  onclick=""
-                />
-              </div>
+              Já possui uma conta?
+              <a class="a" href="./login.html">Login</a>
+            </div>
+            <div>
+              <input
+                type="submit"
+                value="Criar conta"
+                id="botao"
+                style="width: 158px; margin-top: 0"
+                onclick=""
+              />
+            </div>
           </div>
         </form>
       </div>
