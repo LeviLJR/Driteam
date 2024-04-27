@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alike&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
 :root {
   --green: #50fa7b;
   --gray-dark: #121212;
@@ -5,11 +8,8 @@
   --white: #FFFFFF;
   --gray: #6C6C6C;
   --yellow-light: #F4F1DE;
-}
-
-* {
-  font-family: "Inter";
-  font-weight: 400;
+  --font1: "Inter", sans-serif;
+  --font2: "Abhaya Libre", serif;
 }
 
 html, body {
@@ -26,6 +26,8 @@ main {
 }
 
 .login {
+  font-family: var(--font1);
+  font-weight: 400;
   width: 500px;
   height: 500px;
   display: flex;
@@ -42,6 +44,8 @@ main {
 }
 
 .large_input {
+  font-family: var(--font1);
+  font-weight: 400;
   margin-top: 10px;
   width: 450px;
   height: 35px;
@@ -53,6 +57,8 @@ main {
 }
 
 .medium_input {
+  font-family: var(--font1);
+  font-weight: 400;
   margin-top: 10px;
   width: 320px;
   height: 35px;
@@ -64,6 +70,8 @@ main {
 }
 
 .small_input {
+  font-family: var(--font1);
+  font-weight: 400;
   margin-top: 10px;
   width: 205px;
   height: 35px;
@@ -76,6 +84,8 @@ main {
 }
 
 .vsmall_input {
+  font-family: var(--font1);
+  font-weight: 400;
   margin-top: 10px;
   width: 90px;
   height: 35px;
@@ -97,6 +107,8 @@ main {
 }
 
 #botao {
+  font-family: var(--font1);
+  font-weight: 400;
   margin-top: 2rem;
   background-color: var(--green);
   color: #000;
@@ -127,12 +139,12 @@ main {
   margin-left: 112px;
   width: 309px;
   height: 75px;
-  flex-direction: row;
-  align-self: center;
 }
 
 .img_raiz {
-  margin: 0%;
+  margin-top: 0%;
+  width: 693px;
+  height: 591px;
 }
 
 .password {
@@ -164,6 +176,8 @@ main {
 }
 
 .header {
+  font-family: var(--font1);
+  font-weight: 400;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -179,19 +193,44 @@ main {
 
 .slogan {
   color: var(--white);
-  font-size: 48px;
+  font-family: var(--font2);
+  font-size: 40px;
   margin-left: 170px;
   margin-top: 160px;
 }
 
 .slogan2 {
   color: var(--white);
+  font-family: var(--font1);
   font-size: 24px;
-  font-weight: 300;
 }
 
 .mission {
+  margin-left: 150px;
+  background-color: var(--gray-dark);
+  font-family: var(--font2);
+  font-size: 32px;
+  color: var(--white);
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.title_mission {
+  margin-top: 100px;
+  margin-bottom: 0%;
+}
+
+.line_mission {
+  border-top: 3px solid var(--green);
+  width: 50%; 
+  margin-left: 40px; 
+
+}
+
+.txt_mission {
+  margin-top: 150px;
+  color: var(--white);
+  font-family: var(--font1);
+  font-size: 20px;
 }
