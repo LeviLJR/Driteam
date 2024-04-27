@@ -15,8 +15,7 @@
 html, body {
   margin: 0;
   height: 100%;
-  background-color: var(--gray-dark);
-  
+  background-color: var(--gray-dark);  
 }
 
 main {
@@ -93,6 +92,8 @@ main {
 
 .a_home {
   color: var(--white);
+  margin-left: 56px;
+  font-size: 24px;
 }
 
 #botao {
@@ -107,20 +108,23 @@ main {
 }
 
 #botao_home {
-  margin-top: 2rem;
-  background-color: transparent;
+  background-color: var(--gray-dark);
   color: var(--white);
-  width: 220px;
-  height: 45px;
+  width: 275px;
+  height: 66px;
   border-width: 2px;
   border-radius: 8px;
   border-color: var(--green);
+  margin-right: 105px;
+  margin-left: 80px;
+  font-size: 20px;
+  font-weight: 500px;
 }
 
 .img {
-  width: 200px;
-  height: 48px;
+  margin-top: 1rem;
   margin-bottom: 10px;
+  margin-left: 112px;
   width: 309px;
   height: 75px;
   flex-direction: row;
@@ -147,8 +151,9 @@ main {
 }
 
 .hero{
+  background-image: url('./assets/images/heroBanner.png');
   width: 100%;
-  height: 100%;
+  height: 1024px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -157,7 +162,7 @@ main {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 24;
 }
@@ -166,4 +171,17 @@ main {
   background-color: var(--gray-dark);
   color: var(--white);
   
+}
+
+.slogan {
+  color: var(--white);
+  font-size: 48px;
+  margin-left: 170px;
+  margin-top: 160px;
+}
+
+.slogan2 {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 300;
 }
