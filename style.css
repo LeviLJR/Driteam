@@ -27,6 +27,22 @@ main {
   justify-content: space-around;
 }
 
+h1 {
+  color: var(--white);
+  font-family: var(--font2);
+  font-size: 50px;
+  margin-left: 170px;
+  margin-top: 160px;
+}
+
+h2 {
+  font-family: var(--font2);
+  font-size: 40px;
+  color: var(--white);
+  margin-top: 100px;
+  margin-bottom: 0%;
+}
+
 .login {
   font-family: var(--font1);
   font-weight: 400;
@@ -187,47 +203,26 @@ main {
   font-size: 24;
 }
 
-.carrossel {
-  background-color: var(--gray-dark);
-  color: var(--white);
-  
-}
-
 .slogan {
-  color: var(--white);
-  font-family: var(--font2);
-  font-size: 40px;
-  margin-left: 170px;
-  margin-top: 160px;
-}
-
-.slogan2 {
   color: var(--white);
   font-family: var(--font1);
   font-size: 24px;
+  margin-left: 170px;
 }
 
 .mission {
   margin-left: 150px;
   background-color: var(--gray-dark);
   height: 703px;
-  font-family: var(--font2);
-  font-size: 32px;
-  color: var(--white);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.title_mission {
-  margin-top: 100px;
-  margin-bottom: 0%;
-}
-
 .line_mission {
-  border-top: 3px solid var(--green);
-  width: 50%; 
-  margin-left: 30px; 
+  border-top: 3px solid var(--green-box);
+  width: 45%; 
+  margin-left: 40px; 
 
 }
 
@@ -288,4 +283,84 @@ main {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.carrossel {
+  background-color: var(--gray-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 962px;
+  color: var(--white);
+  font-family: var(--font2);
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+}
+
+.txt_carrossel {
+  font-family: var(--font1);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 2.5;
+  margin-top: 25px;
+}
+
+.slider {
+  display: block;
+  width: 420px;
+  height: 488px;
+  margin-top: 20px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.slider li {
+  list-style: none;
+  position: absolute;
+}
+
+.slider img {
+  margin-top: 70px;
+  width: 420px;
+  height: 488px;
+  vertical-align: top;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider label {
+  background-color: var(--green-box);
+  bottom: -40px;
+  cursor: pointer;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  left: 150px;
+}
+
+.slider li:nth-child(2) label {
+  left: 200px;
+}
+
+.slider li:nth-child(3) label {
+  left: 250px;
+}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
 }
