@@ -1,5 +1,5 @@
 <h1 align="center">Projeto Re:Forest</h1>
-<img src="/assets/images/logo_github.png">
+<img src="/assets/images/logo4.png">
 
 
 
