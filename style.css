@@ -3,10 +3,12 @@
 
 :root {
   --green: #50fa7b;
+  --green-box: #1ED760;
   --gray-dark: #121212;
   --black: black;
   --white: #FFFFFF;
   --gray: #6C6C6C;
+  --soft-gray: #2E2A2A;
   --yellow-light: #F4F1DE;
   --font1: "Inter", sans-serif;
   --font2: "Abhaya Libre", serif;
@@ -208,6 +210,7 @@ main {
 .mission {
   margin-left: 150px;
   background-color: var(--gray-dark);
+  height: 703px;
   font-family: var(--font2);
   font-size: 32px;
   color: var(--white);
@@ -233,4 +236,56 @@ main {
   color: var(--white);
   font-family: var(--font1);
   font-size: 20px;
+  line-height: 3;
+}
+
+.informacoes {
+  background-color: var(--soft-gray);
+  width: 100%;
+  height: 342px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title_info {
+  color: var(--white);
+  font-family: var(--font1);
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.txt_info {
+  color: var(--white);
+  font-family: var(--font1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  
+}
+
+.box_info {
+  background-color: var(--green-box);
+  width: 541px;
+  height: 342px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font1);
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.txt_box {
+  color: var(--black);
+  font-family: var(--font1);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 }
