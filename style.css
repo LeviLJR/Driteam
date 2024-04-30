@@ -349,18 +349,18 @@ h2 {
 
 .footer{
   background-color: var(--softest-gray);
-  padding: 75px 200px;
+  padding: 60px 200px 10px 200px;
 }
 
 .footer_info{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 .footer h2{
-  margin: 0;
+  margin: 0 0 40px 0;
 }
 
 .footer h4{
@@ -383,4 +383,37 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 60px;  
+}
+
+.copyright{
+  text-align: center; 
+  margin-top: 90px;
+}
+
+.copyright p{
+  color: var(--green-box);
+  font-weight: 500;
+}
+
+.redes_sociais{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px; 
+  margin-top: 30px; 
+}
+
+.redes_sociais a {
+  color: #fff;
+  font-family: var(--font1);
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.redes_sociais i{
+  font-size: 24px;
+  margin-right: 8px;
 }
