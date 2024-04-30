@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Re:Forest</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./style.css">
   <script src="https://kit.fontawesome.com/492a619caf.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <section class="hero">
     <header class="header">
         <figure class="img_logo"> 
-          <img src="assets/images/logo5.png">
+          <img src="assets/images/logo5.png" alt="Logo Re:Forest">
         </figure>
         <div class="header">
-          <a class="a_home">Nossa Missão</a>
-          <a class="a_home">Passo a Passo</a>
+          <a style="text-decoration: none;" href="#mission" class="a_home">Nossa Missão</a>
+          <a style="text-decoration: none;" href="#informacoes" class="a_home">Passo a Passo</a>
           <input
             type="submit"
             value="ADOTAR UMA PLANTA"
             id="botao_home"
-            onclick=""
-          />
+            onclick="window.location.href='#options'"
+          >
         </div>
     </header>
     <h1>Você pode tornar o nosso<br>mundo melhor!</h1>
@@ -30,7 +30,7 @@
     </div>
   </section>
 
-  <section class="mission">
+  <section class="mission" id="mission"> 
     <div>
       <h2>
         <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -1150 960 960" width="40px" fill="#1ED760"><path d="M320-200v-560l440 280-440 280Z"/></svg>Nossa Missão
@@ -39,35 +39,35 @@
       <p class="txt_mission">Incentivar cada pessoa a adotar uma muda de planta de sua região de moradia, contribuindo para a biodiversidade local e a saúde do nosso planeta.</p>
     </div>
     <div>
-      <img src="assets/images/raizes.png" class="img_raiz">
+      <img src="assets/images/raizes.png" class="img_raiz" alt="Raízes de uma planta">
     </div>
   </section>
 
-  <section class="informacoes">
+  <section class="informacoes" id="informacoes">
     <div class="title_info">
       <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 -960 960 960" width="56px" fill="#FFFFFF"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
-      <p>Descubra</p>
+      <h4>Descubra</h4>
       <p class="txt_info">
         Use nossa ferramenta para escolher uma planta nativa de sua região.
       </p>
     </div>
     <div class="title_info bg_green txt_black">
       <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#000000"><path d="M466-146v-315q-54 0-103-20t-87-58q-38-38-57.5-87.6Q199-676.2 199-730v-28h28q52.69 0 102.03 20.59T416-679q32 32 51.5 73.5T492-518q10-20 22.5-37.5T543-589q37.86-37.82 87.51-58.41Q680.15-668 734-668h28v28q0 53.88-20.62 103.56-20.62 49.67-58.5 87.55Q645-411 596.5-391.5 548-372 494-372v226h-28Zm1-344q0-48-18.5-91.5T396-659q-34-34-77.5-52.5T227-730q0 48 18 92t52 78q34 34 78 52t92 18Zm27 90q48 0 91.5-18t77.5-52q34-34 52.5-78t18.5-92q-48 0-92 18.5T564-569q-34 34-52 77.5T494-400Zm0 0Zm-27-90Z"/></svg>
-      <p>Adote uma Planta</p>
+      <h4>Adote uma Planta</h4>
       <p class="txt_info">
         Escolhida sua planta, ela será enviada até você. Plante e cuide dela!
       </p>
     </div>
     <div class="title_info">
       <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 -960 960 960" width="56px" fill="#FFFFFF"><path d="M280-360v-240q0-33 23.5-56.5T360-680h326L583-783l57-57 200 200-200 200-57-56 103-104H360v240h-80Zm-80 240q-33 0-56.5-23.5T120-200v-600h80v600h480v-160h80v160q0 33-23.5 56.5T680-120H200Z"/></svg>
-      <p>Compartilhe sua História</p>
+      <h4>Compartilhe sua História</h4>
       <p class="txt_info">
         Poste fotos e compartilhe sua experiência em suas redes.
       </p>
     </div>
   </section>
 
-  <section class="options">
+  <section class="options" id="options">
     <h2>Escolha sua muda!</h2>
     <div class="txt_options">
         Escolha uma dessas plantas nativas de sua região.<br> 
@@ -85,10 +85,11 @@
           <input
             type="submit"
             value="Quero essa"
-            id="botao"
+            id="botao_pinheiro"
+            class="botao"
             style="width: 65%; margin-bottom: 30px; margin-top: 0;"
             onclick=""
-          />
+          >
         </div>
       </div>
   
@@ -102,10 +103,11 @@
           <input
             type="submit"
             value="Quero essa"
-            id="botao"
+            id="botao_girassol"
+            class="botao"
             style="width: 65%; margin-bottom: 30px; margin-top: 0;"
             onclick=""
-          />
+          >
         </div>
       </div>
   
@@ -119,10 +121,11 @@
           <input
             type="submit"
             value="Quero essa"
-            id="botao"
+            id="botao_rosa"
+            class="botao"
             style="width: 65%; margin-bottom: 30px; margin-top: 0;"
             onclick=""
-          />
+          >
         </div>
       </div>
 
@@ -136,10 +139,11 @@
           <input
             type="submit"
             value="Quero essa"
-            id="botao"
+            id="botao_bromelia"
+            class="botao"
             style="width: 65%; margin-bottom: 30px; margin-top: 0;"
             onclick=""
-          />
+          >
         </div>
       </div>
 
@@ -153,10 +157,11 @@
         <input
           type="submit"
           value="Quero essa"
-          id="botao"
+          id="botao_ipe"
+          class="botao"
           style="width: 65%; margin-bottom: 30px; margin-top: 0;"
           onclick=""
-        />
+        >
       </div>
     </div>
   </div>
@@ -171,7 +176,7 @@
         <div class="redes_sociais">
           <div>
             <div style="margin-bottom: 20px;">
-              <a href="tel:(43) 99078-4002">
+              <a href="https://wa.me/+5543990784002">
                 <i class="fa-brands fa-whatsapp"></i>
                 <span>(43) 99078-4002</span>
               </a>
