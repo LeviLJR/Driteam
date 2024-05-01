@@ -458,3 +458,59 @@ h2 {
   font-size: 24px;
   margin-right: 8px;
 }
+
+/* Style the popup container */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: var(--gray-dark);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: auto;
+  margin: 24px;
+}
+
+.popup-content h2 {
+  margin: 0 0 16px 0;
+  width: fit-content;
+  font-family: var(--font2);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.popup-content p {
+  color: var(--white);
+  font-family: var(--font1);
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.buttons_password {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.btn {
+  background-color: var(--gray-dark);
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
