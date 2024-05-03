@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <main>
       <div>
-        <img class="img" src="./assets/images/logo5.png">
+        <img class="img" src="./assets/images/logo5.png" alt="Logo Re:Forest">
       </div>
       <div class="login">
         <h1>Login</h1>
         <form>
           <div>
-            <label for="email" class="label">E-mail</label><br />
-            <input type="email" id="email" name="email" placeholder="" class="large_input"/><br />
+            <label for="email" class="label">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="" class="large_input">
           </div>
           <div>
-            <label for="pwd">Senha</label> <br />
-            <input type="password" id="pwd" name="pwd" class="large_input"/> <br /><br />
-            <a class='a' href="./senha.html">Esqueceu a senha?</a>
+            <label for="pwd">Senha</label>
+            <input type="password" id="pwd" name="pwd" class="large_input">
           </div>
+          <a class='a' href="./recuperar_senha.html">Esqueceu a senha?</a>
           <div>
             <input
               type="submit"
               value="Login"
               id="botao"
-              onclick="window.open.href='./senha.html'"
-            />
+              class="botao"
+              onclick="action='./principal.html'"
+            >
           </div>
           <div style="display: flex; justify-content: center">
             Não possui uma conta?
