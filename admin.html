@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main>
+        <div>
+            <img class="img" src="./assets/images/logo5.png" alt="Logo Re:Forest">
+        </div>
+        <section class="cadastro">
+            <div class="formulario-cadastro">
+                <h1>Novo Usuário</h1>
+                <form>
+                    <div class="input-group">
+                        <label for="name">Nome</label>
+                        <input type="name" id="name" name="name" class="large_input">
+                    </div>
+                    <div class="input-group">
+                        <label for="email" class="label">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="" class="large_input">
+                    </div>
+                    <div>
+                        <input
+                        type="submit"
+                        value="Cadastrar"
+                        id="botao"
+                        class="botao"
+                        >
+                    </div>
+                </form>
+            </div>
+            <div class="formulario-cadastro">
+                <h2>Usuários</h2>
+                <form id="pesquisaContainer"> 
+                    <div class="pesquisa_input">
+                        <label for="pesquisa" class="label">Pesquisar</label> <input type="text" id="pesquisa" class="medium_input">
+                    </div>
+                </form>
+                <ul class="lista-cadastro">
+                </ul>
+                <button id="limparLista" class="botao">Limpar</button> 
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

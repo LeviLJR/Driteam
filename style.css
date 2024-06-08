@@ -514,3 +514,63 @@ h2 {
   margin-top: 20px;
 }
 
+.cadastro {
+  justify-content: center;
+  gap: 5%;
+  font-family: var(--font1);
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--white);
+}
+.cadastro h1, .cadastro h2 {
+  margin-top: 60px;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.formulario-cadastro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  height: 500px;
+}
+
+.formulario-cadastro div {
+  margin-bottom: 20px;
+}
+
+.lista-cadastro{
+  width: 90%;
+  overflow:auto; 
+  padding: 0;
+  list-style-type: none;
+}
+
+.lista-item{
+  padding: 10px 0;
+  font-family: var(--font1);
+  font-weight: 400;
+  margin-top: 10px;
+  padding-left: 20px;
+  border: 1px solid var(--white);
+  border-radius: 8px;
+  border-color: var(--white);
+  background-color: transparent;
+  color: var(--white);
+
+}
+
+.formulario-cadastro label {
+  display: block; /* Garante que a label ocupe uma linha separada */
+}
+
+.formulario-cadastro input {
+  display: block; /* Garante que o input ocupe uma linha separada */
+  margin-bottom: 10px; /* Adiciona uma margem inferior ao input */ 
+}
+
