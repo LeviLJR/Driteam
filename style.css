@@ -545,13 +545,13 @@ h2 {
 }
 
 .lista-cadastro{
-  width: 90%;
+  width: 80%;
   overflow:auto; 
   padding: 0;
   list-style-type: none;
 }
 
-.lista-item{
+.lista-item {
   padding: 10px 0;
   font-family: var(--font1);
   font-weight: 400;
@@ -562,7 +562,17 @@ h2 {
   border-color: var(--white);
   background-color: transparent;
   color: var(--white);
+  display: flex; /* Adicionado para alinhar os itens */
+  align-items: center; /* Adicionado para alinhar os itens verticalmente */
+}
 
+.lista-item span {
+  margin-right: 10px; /* Espaçamento entre os elementos */
+}
+
+.close, .edit {
+  font-size: 20px;
+  margin-left: 5px; /* Empurra o ícone para a direita */
 }
 
 .formulario-cadastro label {
@@ -574,3 +584,6 @@ h2 {
   margin-bottom: 10px; /* Adiciona uma margem inferior ao input */ 
 }
 
+.close, .edit {
+  font-size: 20px; /* Aumentar tamanho do ícone */
+}
