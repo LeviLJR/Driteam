@@ -15,6 +15,7 @@ list.addEventListener("click", function (ev) {
 
     atualizarVisibilidadeBotaoLimpar();
     atualizarVisibilidadeCampoPesquisa();
+    atualizarVisibilidadeTitulo();
   }
 
   if (ev.target.classList.contains("edit")) {
@@ -40,6 +41,7 @@ function carregarUsuarios() {
 
   atualizarVisibilidadeBotaoLimpar();
   atualizarVisibilidadeCampoPesquisa();
+  atualizarVisibilidadeTitulo();
 }
 
 // Função para adicionar um usuário na lista
@@ -83,11 +85,13 @@ function adicionarUsuario() {
 
   adicionarUsuarioNaLista(id, nome, email, data);
 
+  // Limpa os campos após adicionar o usuário
   document.getElementById("name").value = "";
   document.getElementById("email").value = "";
 
   atualizarVisibilidadeBotaoLimpar();
   atualizarVisibilidadeCampoPesquisa();
+  atualizarVisibilidadeTitulo();
 }
 
 // Função para validar o email
@@ -185,12 +189,19 @@ function limparLista() {
   localStorage.removeItem("usuarios");
   atualizarVisibilidadeBotaoLimpar();
   atualizarVisibilidadeCampoPesquisa();
+  atualizarVisibilidadeTitulo();
 }
 
 // Função para atualizar a visibilidade do botão "Limpar Lista"
 function atualizarVisibilidadeBotaoLimpar() {
   let botaoLimpar = document.getElementById("limparLista");
   botaoLimpar.style.display = list.children.length > 0 ? "block" : "none";
+}
+
+// Função para atualizar a visibilidade do Título "Adicionar Usuário"
+function atualizarVisibilidadeTitulo() {
+  let titulo = document.getElementById("titulo_novo");
+  titulo.style.display = list.children.length > 0 ? "flex" : "none";
 }
 
 // Função para atualizar a visibilidade do campo de pesquisa
@@ -212,7 +223,16 @@ function filtrarUsuarios() {
     let data = item.querySelector(".data").textContent.toLowerCase();
 
     item.style.display = nome.includes(termoPesquisa) || email.includes(termoPesquisa) || data.includes(termoPesquisa)
-      ? "block"
+      ? "flex"
       : "none";
   });
 }
+
+// Função para limpar os campos Nome e Email
+function limparCampos() {
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+}
+
+// Adiciona um ouvinte de evento ao botão "Limpar Campos"
+document.getElementById("limparCampos").addEventListener("click", limparCampos);

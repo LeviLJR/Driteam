@@ -24,17 +24,22 @@
                         <input type="email" id="email" name="email" placeholder="" class="large_input">
                     </div>
                     <div>
-                        <input
-                        type="submit"
-                        value="Cadastrar"
-                        id="botao"
-                        class="botao"
-                        >
+                        <div> 
+                            <button type="button" id="limparCampos" class="botao secundario">Limpar Campos</button>
+                        </div>
+                        <div>
+                            <input
+                            type="submit"
+                            value="Cadastrar"
+                            id="botao"
+                            class="botao"
+                            >
+                        </div>
                     </div>
                 </form>
             </div>
-            <div class="formulario-cadastro">
-                <h2>Usuários</h2>
+            <div class="formulario-cadastro" id="titulo_novo">
+                <h2 >Usuários</h2>
                 <form id="pesquisaContainer"> 
                     <div class="pesquisa_input">
                         <label for="pesquisa" class="label">Pesquisar</label> <input type="text" id="pesquisa" class="medium_input">
@@ -42,7 +47,7 @@
                 </form>
                 <ul class="lista-cadastro">
                 </ul>
-                <button id="limparLista" class="botao">Limpar</button> 
+                <button id="limparLista" class="botao">Excluir</button> 
             </div>
         </section>
     </main>

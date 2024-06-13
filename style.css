@@ -8,6 +8,7 @@
   --black: black;
   --white: #FFFFFF;
   --gray: #6C6C6C;
+  --light-gray: #a9a9a9;
   --soft-gray: #2E2A2A;
   --softest-gray: #1B1A1A;
   --yellow-light: #F4F1DE;
@@ -506,6 +507,8 @@ h2 {
 
 .btn {
   background-color: var(--gray-dark);
+  font-family: var(--font1);
+  font-size: 14px;
   color: #fff;
   font-weight: 700;
   padding: 10px 20px;
@@ -586,4 +589,30 @@ h2 {
 
 .close, .edit {
   font-size: 20px; /* Aumentar tamanho do ícone */
+}
+
+.editInput{
+  border-radius: 8px;
+  background-color: var(--gray-dark);
+  color: var(--white);
+  border: solid 1px var(--gray);
+  padding: 0.5em;
+  width: 80%;
+}
+.edit-container{
+  margin-top: 20px;
+  padding-left: 2em;
+  width: 100%;
+}
+.salvarBtn {
+  margin-top: 0.5em;
+  border: none;
+  border-radius: 3rem;
+  background-color: var(--green);
+  font-size: 14px;
+  padding: 0.5em 3em;
+}
+
+.secundario{
+  background-color: var(--light-gray);
 }
