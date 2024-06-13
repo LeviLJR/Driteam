@@ -201,7 +201,17 @@ function atualizarVisibilidadeBotaoLimpar() {
 // Função para atualizar a visibilidade do Título "Adicionar Usuário"
 function atualizarVisibilidadeTitulo() {
   let titulo = document.getElementById("titulo_novo");
+  let cadastro = document.querySelector(".cadastro"); // Seleciona o elemento com a classe "cadastro"
+
   titulo.style.display = list.children.length > 0 ? "flex" : "none";
+
+  // Aplica grid na classe "cadastro" quando "titulo_novo" estiver com display flex
+  if (titulo.style.display === "flex") {
+    cadastro.style.display = "grid";
+    cadastro.style.gridTemplateColumns = "34% 64%"; // Define as colunas do grid
+  } else {
+    cadastro.style.display = "flex";
+  }
 }
 
 // Função para atualizar a visibilidade do campo de pesquisa

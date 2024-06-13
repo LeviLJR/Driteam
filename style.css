@@ -520,13 +520,12 @@ h2 {
 .cadastro {
   font-family: var(--font1);
   font-weight: 400;
-  display: grid;
-  padding: 0 3%;
-  grid-template-columns: 34% 64%;
+  display: flex; /* Define o container como flex */
   flex-direction: row;
   align-items: center;
   color: var(--white);
 }
+
 .cadastro h1, .cadastro h2 {
   margin-top: 60px;
   text-align: center;
