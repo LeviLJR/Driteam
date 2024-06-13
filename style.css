@@ -518,11 +518,11 @@ h2 {
 }
 
 .cadastro {
-  justify-content: center;
-  gap: 5%;
   font-family: var(--font1);
   font-weight: 400;
-  display: flex;
+  display: grid;
+  padding: 0 3%;
+  grid-template-columns: 34% 64%;
   flex-direction: row;
   align-items: center;
   color: var(--white);
@@ -539,7 +539,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 800px;
+  width: 100%;
   height: 500px;
 }
 
